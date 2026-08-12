@@ -1,0 +1,415 @@
+/* ========================================
+   TEAM SECTION
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+.team-section {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 100%;
+
+  min-height: 825px;
+
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  background: #e9e6eb;
+}
+
+
+/* ========================================
+   PARALLAX BACKGROUND
+======================================== */
+
+.team-parallax {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 0;
+}
+
+
+/* ========================================
+   LIGHT OVERLAY
+======================================== */
+
+.team-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background: rgba(235, 232, 237, 0.5);
+
+  pointer-events: none;
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.team-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  min-height: 525px;
+
+  padding: 72px 70px 70px;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.team-header {
+  width: 100%;
+
+  text-align: center;
+}
+
+
+.team-header h1 {
+  margin: 0;
+
+  color: #1a1a1a;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 45px;
+
+  font-weight: 300;
+
+  letter-spacing: 0.5px;
+
+  line-height: 1.2;
+}
+
+
+/* ========================================
+   DECORATION
+======================================== */
+
+.team-decoration {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  margin: 11px 0 13px;
+}
+
+
+.team-decoration span {
+  width: 28px;
+
+  height: 1px;
+
+  background: #77717d;
+}
+
+
+.team-decoration b {
+  color: #222029;
+
+  font-size: 6px;
+
+  line-height: 1;
+}
+
+
+/* ========================================
+   HEADER DESCRIPTION
+======================================== */
+
+.team-header p {
+  margin: 0;
+
+  color: #1b1a1b;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 21px;
+
+  font-style: italic;
+
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   TEAM GRID
+======================================== */
+
+.team-grid {
+  width: 100%;
+
+  margin-top: 48px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  column-gap: 55px;
+}
+
+
+/* ========================================
+   TEAM MEMBER
+======================================== */
+
+.team-member {
+  text-align: center;
+}
+
+
+/* ========================================
+   MEMBER IMAGE
+======================================== */
+
+.team-member-image {
+  width: 90px;
+
+  height: 90px;
+
+  margin: 0 auto 22px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  background: #ddd;
+}
+
+
+.team-member-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  filter: grayscale(100%);
+}
+
+
+/* ========================================
+   MEMBER NAME
+======================================== */
+
+.team-member h2 {
+  margin: 0 0 9px;
+
+  color: #111112;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+
+/* ========================================
+   ROLE
+======================================== */
+
+.team-role {
+  margin: 0;
+
+  color: #433f45;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.4;
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+.team-member h2 {
+  margin: 0 0 9px;
+
+  color: #1d1d1e;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+.team-description {
+  max-width: 245px;
+
+  margin: 13px auto 0;
+
+  color: #2e2d2f;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+
+  line-height: 1.2;
+}
+
+
+/* ========================================
+   SOCIAL ICONS
+======================================== */
+
+.team-social {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 19px;
+}
+
+
+.team-social a {
+  color: #403955;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-decoration: none;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.team-social svg {
+  width: 16px;
+
+  height: px;
+}
+
+
+.team-social a:hover {
+  opacity: 0.55;
+
+  transform: translateY(-2px);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 968px) {
+
+  .team-section {
+    max-width: 100%;
+
+    min-height: auto;
+  }
+
+  .team-content {
+    padding: 75px 45px 70px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+
+    column-gap: 0;
+    row-gap: 40px;
+
+    margin-top: 45px;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+  .team-content {
+    
+    padding: 150px 130px 165px;
+  }
+
+  .team-header h2 {
+    font-size: 24px;
+  }
+
+  .team-header p {
+    font-size: 11px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+
+    row-gap: 55px;
+  }
+
+  .team-member-image {
+    width: 70px;
+
+    height: 70px;
+  }
+
+}

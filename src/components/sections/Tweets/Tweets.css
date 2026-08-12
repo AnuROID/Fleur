@@ -1,0 +1,230 @@
+/* ========================================
+   TWEETS SECTION
+======================================== */
+
+.tweets-section {
+  position: relative;
+
+  width: 100%;
+  min-height: 500px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ========================================
+   PARALLAX BACKGROUND
+======================================== */
+
+.tweets-section .parallax-background {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 0;
+}
+
+
+/* ========================================
+   OVERLAY
+======================================== */
+
+.tweets-overlay {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(64, 57, 85, 0.35);
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.tweets-content {
+  position: relative;
+
+  z-index: 3;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+
+/* ========================================
+   HEART ICON
+======================================== */
+
+.tweets-icon {
+  margin-bottom: 25px;
+
+  color: #ffffff;
+
+  font-size: 38px;
+
+  line-height: 1;
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.tweets-content h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 40px;
+
+  font-weight: 300;
+
+  letter-spacing: 2px;
+
+  line-height: 1.2;
+}
+
+
+/* ========================================
+   DECORATION
+======================================== */
+
+.tweets-decoration {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  margin: 22px 0;
+}
+
+
+.tweets-decoration span {
+  width: 45px;
+
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.7);
+}
+
+
+.tweets-decoration b {
+  color: #ffffff;
+
+  font-size: 7px;
+
+  line-height: 1;
+}
+
+
+/* ========================================
+   MESSAGE
+======================================== */
+
+.tweets-content p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 18px;
+
+  font-style: italic;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 968px) {
+
+  .tweets-section {
+    min-height: 450px;
+  }
+
+  .tweets-overlay {
+    min-height: 450px;
+  }
+
+  .tweets-content h2 {
+    font-size: 36px;
+  }
+
+  .tweets-icon {
+    font-size: 34px;
+  }
+
+  .tweets-content p {
+    font-size: 17px;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .tweets-section {
+    min-height: 400px;
+  }
+
+  .tweets-overlay {
+    min-height: 400px;
+
+    padding: 40px 25px;
+  }
+
+  .tweets-content h2 {
+    font-size: 30px;
+
+    letter-spacing: 1px;
+  }
+
+  .tweets-icon {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+  }
+
+  .tweets-decoration span {
+    width: 35px;
+  }
+
+  .tweets-content p {
+    font-size: 16px;
+  }
+
+}

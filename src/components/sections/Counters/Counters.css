@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+/* ========================================
+   COUNTERS
+======================================== */
+
+.counters-section {
+  width: 100%;
+
+  padding: 75px 7.5% 85px;
+
+  background: #ffffff;
+}
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.counters-container {
+  width: 100%;
+
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ========================================
+   ITEM
+======================================== */
+
+.counter-item {
+  text-align: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+/* ========================================
+   ICON
+======================================== */
+
+.counter-icon {
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #403955;
+}
+
+.counter-icon svg {
+  width: 35px;
+
+  height: 35px;
+
+  stroke-width: 1.1;
+}
+
+/* ========================================
+   NUMBER
+======================================== */
+
+.counter-number {
+  margin-top: 5px;
+
+  color: #403955;
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 34px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  line-height: 1.2;
+
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+/* ========================================
+   ANIMATED NUMBER
+======================================== */
+
+.animated-number {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  height: 100%;
+}
+
+/* ========================================
+   ROLLING DIGIT
+======================================== */
+
+.rolling-digit {
+  position: relative;
+
+  display: inline-block;
+
+  width: 0.62em;
+
+  height: 1em;
+
+  overflow: hidden;
+
+  vertical-align: middle;
+}
+
+/* ========================================
+   DIGIT TRACK
+======================================== */
+
+.rolling-digit-track {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 10em;
+
+  display: flex;
+
+  flex-direction: column;
+
+  transition:
+    transform 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ========================================
+   DIGIT
+======================================== */
+
+.rolling-digit-number {
+  width: 100%;
+
+  height: 1em;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+/* ========================================
+   LABEL
+======================================== */
+
+.counter-label {
+  margin-top: 18px;
+
+  color: #77717b;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 18px;
+
+  font-weight: 600;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 968px) {
+
+  .counters-section {
+    padding: 65px 40px 75px;
+  }
+
+  .counters-container {
+    grid-template-columns: repeat(2, 1fr);
+
+    row-gap: 55px;
+  }
+
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .counters-section {
+    padding: 60px 25px;
+  }
+
+  .counters-container {
+    grid-template-columns: 1fr 1fr;
+
+    row-gap: 45px;
+  }
+
+  .counter-number {
+    font-size: 30px;
+
+    height: 38px;
+
+    letter-spacing: 2px;
+  }
+
+}

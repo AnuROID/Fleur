@@ -1,0 +1,329 @@
+/* ========================================
+   WORK SECTION
+======================================== */
+
+.work-section {
+  width: 100%;
+
+  padding: 110px 7.5% 125px;
+
+  background-color: #f8f6f8;
+
+  background-image:
+    url("../../../assets/work/bg.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: repeat;
+
+  position: relative;
+}
+
+.work-section::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(248, 246, 248, 0.45);
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.work-header {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+.work-header h2 {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+
+  color: #3f3535;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 42px;
+
+  font-weight: 300;
+
+  letter-spacing: 1px;
+}
+
+
+/* ========================================
+   DECORATION
+======================================== */
+
+.work-decoration {
+   position: relative;
+  z-index: 2;
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  margin: 20px 0;
+}
+
+
+.work-decoration span {
+   position: relative;
+  z-index: 2;
+  width: 45px;
+
+  height: 1px;
+
+  background: #242324;
+}
+
+
+.work-decoration b {
+   position: relative;
+  z-index: 2;
+  font-size: 7px;
+
+  color: #514965;
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.work-header p {
+   position: relative;
+  z-index: 2;
+  margin: 0;
+
+  color: #201f21;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+   font-weight: 500;
+  font-style: italic;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   FILTER
+======================================== */
+
+.work-filters {
+   position: relative;
+  z-index: 2;
+  margin: 45px auto 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 28px;
+}
+
+
+.work-filters button {
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #292222;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: opacity 0.2s ease;
+}
+
+
+.work-filters button:hover {
+  opacity: 0.55;
+}
+
+
+.work-filters button.active {
+  text-decoration: underline;
+
+  text-underline-offset: 4px;
+}
+
+
+/* ========================================
+   GRID
+======================================== */
+
+.work-grid {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 10px;
+}
+
+
+/* ========================================
+   WORK ITEM
+======================================== */
+
+.work-item {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 1 / 1;
+
+  overflow: hidden;
+
+  background: #eeeeee;
+
+  cursor: pointer;
+}
+
+
+.work-item img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.5s ease;
+}
+
+
+.work-item:hover img {
+  transform: scale(1.05);
+}
+
+
+/* ========================================
+   HOVER OVERLAY
+======================================== */
+
+.work-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(64, 57, 85, 0.25);
+
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+}
+
+
+.work-item:hover .work-overlay {
+  opacity: 1;
+}
+
+
+.work-overlay span {
+  color: #ffffff;
+
+  font-size: 35px;
+
+  font-weight: 300;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 968px) {
+
+  .work-section {
+    padding: 100px 40px;
+  }
+
+  .work-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .work-section {
+    padding: 80px 25px;
+  }
+
+  .work-header h2 {
+    font-size: 32px;
+  }
+
+  .work-header p {
+    font-size: 15px;
+  }
+
+  .work-filters {
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 25px;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

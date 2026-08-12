@@ -1,0 +1,295 @@
+/* ========================================
+   CLIENTS SECTION
+======================================== */
+
+.clients-section {
+  width: 100%;
+
+  background: #ffffff;
+
+  padding: 76px 7% 105px;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.clients-header {
+  text-align: center;
+
+  max-width: 1200px;
+
+  margin: 0 auto 75px;
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.clients-header h2 {
+  margin: 0;
+
+  color: #403955;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 31px;
+
+  font-weight: 300;
+
+  letter-spacing: 1px;
+}
+
+
+/* ========================================
+   DECORATION
+======================================== */
+
+.clients-decoration {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  margin: 15px 0 17px;
+}
+
+.clients-decoration span {
+  width: 32px;
+
+  height: 1px;
+
+  background: #aaa5ae;
+}
+
+.clients-decoration b {
+  font-size: 6px;
+
+  color: #514965;
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.clients-header p {
+  max-width: 950px;
+
+  margin: 0 auto;
+
+  color: #77717b;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  font-style: italic;
+
+  line-height: 1.8;
+}
+
+
+/* ========================================
+   LOGOS
+======================================== */
+
+.clients-logos {
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ========================================
+   DESKTOP
+======================================== */
+
+.clients-desktop {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, 1fr);
+
+  gap: 60px;
+}
+
+
+/* ========================================
+   MOBILE / TABLET
+======================================== */
+
+.clients-mobile {
+  display: none;
+}
+
+
+/* ========================================
+   SINGLE LOGO
+======================================== */
+
+.client-logo {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 0;
+}
+
+.client-logo img {
+  width: 350px;
+
+  max-width: 150%;
+
+  height: auto;
+
+  opacity: 0.65;
+
+  filter: grayscale(100%);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* ========================================
+   HOVER
+======================================== */
+
+.client-logo:hover img {
+  opacity: 1;
+
+  transform: translateY(-3px);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 968px) {
+
+  .clients-section {
+    padding: 70px 30px 90px;
+  }
+
+
+  /* Hide 5 logos */
+  .clients-desktop {
+    display: none;
+  }
+
+
+  /* Show 2 logos horizontally */
+  .clients-mobile {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 30px;
+
+    width: 100%;
+  }
+
+
+  .client-logo img {
+    width: 350px;
+
+    max-width: 100%;
+  }
+
+
+  /* Animation when logos change */
+  .client-change {
+    animation: clientRotate 0.8s ease;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .clients-section {
+    padding: 60px 20px 70px;
+  }
+
+  .clients-header {
+    margin-bottom: 50px;
+  }
+
+  .clients-header h2 {
+    font-size: 26px;
+  }
+
+  .clients-header p {
+    font-size: 14px;
+  }
+
+
+  /* STILL HORIZONTAL */
+  .clients-mobile {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 20px;
+  }
+
+
+  .client-logo img {
+    width: 100%;
+
+    max-width: 180px;
+  }
+
+}
+
+
+/* ========================================
+   ROTATION ANIMATION
+======================================== */
+
+@keyframes clientRotate {
+
+  0% {
+    opacity: 0;
+
+    transform:
+      rotateY(90deg)
+      scale(0.9);
+  }
+
+  60% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0.65;
+
+    transform:
+      rotateY(0deg)
+      scale(1);
+  }
+
+}

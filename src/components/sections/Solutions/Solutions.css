@@ -1,0 +1,535 @@
+/* ========================================
+   SOLUTIONS SECTION
+======================================== */
+
+.solutions-section {
+  width: 100%;
+
+  background: #F9F9F9;
+
+  overflow: hidden;
+
+  padding-top: 78px;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.solutions-header {
+  text-align: center;
+
+  max-width: 1100px;
+
+  margin: 0 auto 35px;
+
+  padding: 0 20px;
+}
+
+.solutions-header h2 {
+  margin: 0;
+
+  color: #403955;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 30px;
+
+  font-weight: 300;
+
+  letter-spacing: 1px;
+}
+
+
+/* ========================================
+   DECORATION
+======================================== */
+
+.solutions-decoration {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  margin: 14px 0 15px;
+}
+
+.solutions-decoration span {
+  width: 32px;
+
+  height: 1px;
+
+  background: #aaa5ae;
+}
+
+.solutions-decoration b {
+  font-size: 6px;
+
+  color: #514965;
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.solutions-header p {
+  margin: 0;
+
+  color: #77717b;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 14px;
+
+  font-style: italic;
+
+  line-height: 1.8;
+}
+
+
+/* ========================================
+   DEVICE AREA
+======================================== */
+
+.solutions-image-area {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 1750px;
+
+  height: 500px;
+
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+
+
+/* ========================================
+   FLOWER / BRANCH BACKGROUND
+======================================== */
+
+.solutions-image-area::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+
+  width: 700px;
+  height: 1850px;
+
+  transform: translateX(-50%);
+
+  background-image: url("../../../assets/soloutions/h1-slide-2-img-5.png");
+
+  background-repeat: no-repeat;
+
+  background-position: center bottom;
+
+  background-size: contain;
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+
+/* ========================================
+   LEFT DEVICE
+======================================== */
+
+.solution-left {
+  position: absolute;
+
+  width: 25%;
+
+  max-width: 650px;
+
+  left: 18%;
+
+  bottom: 0;
+
+  z-index: 2;
+
+  /*
+     Animation
+     Starts outside the screen on the left
+  */
+  opacity: 0;
+
+  animation: solutionLeftIn 1.2s ease-out 0.2s forwards;
+}
+
+
+/* ========================================
+   CENTER DEVICE
+======================================== */
+
+.solution-center {
+  position: absolute;
+
+  width: 26%;
+
+  max-width: 700px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  bottom: -8%;
+
+  z-index: 4;
+
+  /*
+     Animation
+     Starts below the screen
+  */
+  opacity: 0;
+
+  animation: solutionCenterIn 1.2s ease-out 0.5s forwards;
+}
+
+
+/* ========================================
+   RIGHT DEVICE
+======================================== */
+
+.solution-right {
+  position: absolute;
+
+  width: 29%;
+
+  max-width: 650px;
+
+  right: 11%;
+
+  bottom: 0;
+
+  z-index: 2;
+
+  /*
+     Animation
+     Starts outside the screen on the right
+  */
+  opacity: 0;
+
+  animation: solutionRightIn 1.2s ease-out 0.35s forwards;
+}
+
+
+/* ========================================
+   LEFT ANIMATION
+======================================== */
+
+@keyframes solutionLeftIn {
+
+  0% {
+    opacity: 0;
+
+    transform: translateX(-120%);
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
+
+/* ========================================
+   CENTER ANIMATION
+======================================== */
+
+@keyframes solutionCenterIn {
+
+  0% {
+    opacity: 0;
+
+    transform: translateX(-50%) translateY(120%);
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+
+/* ========================================
+   RIGHT ANIMATION
+======================================== */
+
+@keyframes solutionRightIn {
+
+  0% {
+    opacity: 0;
+
+    transform: translateX(120%);
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
+
+/* ========================================
+   BOTTOM FLOWER STRIP
+======================================== */
+
+/* ========================================
+   BOTTOM FLOWER STRIP
+======================================== */
+
+.solutions-bottom {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 100px;
+
+  background-color: #E0DBE2;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+
+/* ========================================
+   BACKGROUND IMAGE
+======================================== */
+
+.solutions-bottom::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background-image: url("../../../assets/parallal/par.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  opacity: 0.75; /* CHANGE THIS */
+
+  z-index: 0;
+
+  pointer-events: none;
+}
+
+
+/* ========================================
+   CONTENT ABOVE IMAGE
+======================================== */
+
+.solutions-bottom p {
+  position: relative;
+
+  z-index: 1;
+
+  margin: 0;
+
+  color: #313033;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 32px;
+
+  font-style: italic;
+}
+.solutions-bottom p {
+  margin: 0;
+
+  color: #313033;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 32px;
+
+  font-style: italic;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 968px) {
+
+  .solutions-section {
+    padding-top: 65px;
+  }
+
+
+  .solutions-header {
+    margin-bottom: 30px;
+  }
+
+
+  .solutions-header h2 {
+    font-size: 26px;
+  }
+
+
+  .solutions-image-area {
+    height: 390px;
+  }
+
+
+  /* LEFT */
+
+  .solution-left {
+    left: 11%;
+
+    width: 20%;
+  }
+
+
+  /* CENTER */
+
+  .solution-center {
+    width: 52%;
+  }
+
+
+  /* RIGHT */
+
+  .solution-right {
+    right: 2%;
+
+    width: 50%;
+  }
+
+
+  .solutions-image-area::before {
+    background-size: cover;
+
+    background-position: center bottom;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .solutions-section {
+    padding-top: 55px;
+  }
+
+
+  .solutions-header {
+    margin-bottom: 20px;
+  }
+
+
+  .solutions-header h2 {
+    font-size: 22px;
+  }
+
+
+  .solutions-header p {
+    font-size: 13px;
+  }
+
+
+  .solutions-image-area {
+    height: 280px;
+  }
+
+
+  /* LEFT */
+
+  .solution-left {
+    left: -10%;
+
+    width: 58%;
+  }
+
+
+  /* CENTER */
+
+  .solution-center {
+    width: 65%;
+  }
+
+
+  /* RIGHT */
+
+  .solution-right {
+    right: -10%;
+
+    width: 58%;
+  }
+
+
+  .solutions-image-area::before {
+    background-size: cover;
+
+    background-position: center bottom;
+  }
+
+
+  .solutions-bottom {
+    min-height: 80px;
+  }
+
+
+  .solutions-bottom p {
+    font-size: 18px;
+  }
+}
+
+
+/* ========================================
+   REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .solution-left,
+  .solution-center,
+  .solution-right {
+    animation: none;
+
+    opacity: 1;
+  }
+}

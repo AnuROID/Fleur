@@ -1,0 +1,259 @@
+/* =========================================================
+   DESKTOP SIDE MENU OVERLAY
+========================================================= */
+
+.desktop-side-menu {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(40, 37, 48, 0.15);
+
+  z-index: 6000;
+}
+
+
+/* =========================================================
+   SIDE MENU
+========================================================= */
+
+.desktop-side-menu-inner {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 455px;
+  max-width: 100%;
+
+  height:100%;
+
+  overflow-y: auto;
+
+  background: #ffffff;
+
+  padding: 4px 100px 50px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.desktop-side-menu-close {
+  position: absolute;
+
+  top: 38=px;
+  right: 38px;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  background: transparent;
+
+  color: #999999;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  font-size: 20px;
+}
+
+
+/* ROTATE X ON HOVER */
+
+.desktop-side-menu-close svg {
+  transition:
+    transform 0.45s ease,
+    color 0.25s ease;
+}
+
+.desktop-side-menu-close:hover svg {
+  transform: rotate(90deg);
+}
+
+.desktop-side-menu-close:hover {
+  color: #403955;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.desktop-side-menu-logo {
+  margin-top: 55px;
+  margin-bottom: 22px;
+}
+
+.desktop-side-menu-logo img {
+  width: 120px;
+  height: auto;
+  display: block;
+
+  filter: brightness(0) saturate(100%)
+    invert(25%)
+    sepia(15%)
+    saturate(900%)
+    hue-rotate(335deg)
+    brightness(85%)
+    contrast(90%);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.desktop-side-menu-description {
+  width: 225px;
+
+  margin: 70px 0 62px;
+
+  color: #77717b;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.desktop-side-menu-links {
+  margin-bottom: 65px;
+}
+
+.desktop-side-menu-links h3,
+.desktop-side-menu-instagram h3 {
+  margin: 10px 0px 8px;
+
+  color: #403955;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 400;
+}
+
+
+.desktop-side-menu-links a {
+  display: block;
+
+  margin-bottom: 0;
+
+  color: #99949c;
+
+  text-decoration: none;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  transition: color 0.25s ease;
+}
+
+
+.desktop-side-menu-links a:hover {
+  color: #403955;
+}
+
+
+/* =========================================================
+   INSTAGRAM
+========================================================= */
+
+.desktop-side-menu-instagram {
+  margin-bottom: 2px;
+}
+
+.desktop-instagram-placeholder {
+  width: 100%;
+  height: 65px;
+}
+
+
+/* =========================================================
+   FOLLOW
+========================================================= */
+
+.desktop-side-menu-follow {
+  width: 100%;
+
+  padding-top: 35px;
+
+  border-top: 1px dotted #999999;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 17px;
+}
+
+
+.desktop-side-menu-follow span {
+  color: #77717b;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 16px;
+
+  margin-right: 5px;
+}
+
+
+.desktop-side-menu-follow a {
+  color: #403955;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+
+  text-decoration: none;
+}
+
+
+.desktop-side-menu-follow a:hover {
+  opacity: 0.6;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .desktop-side-menu {
+    display: none;
+  }
+
+}

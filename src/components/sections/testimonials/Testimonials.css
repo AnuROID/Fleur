@@ -1,0 +1,329 @@
+/* ========================================
+   TESTIMONIALS SECTION
+======================================== */
+
+
+.testimonials-section {
+  width: 100%;
+
+  min-height: 450px;
+
+  padding: 100px 70px 80px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  background-color: #efedf2;
+
+  background-image: url("../../../assets/work/bg.jpg");
+
+  background-size: cover;
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  color: #d8d6e0;
+
+  position: relative;
+}
+.testimonials-section::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(239, 237, 242, 0.45);
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+.testimonial-content {
+  position: relative;
+
+  z-index: 2;
+}
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.testimonial-content {
+  width: 100%;
+
+  max-width: 1150px;
+
+  animation: testimonialFade 0.7s ease;
+}
+
+
+@keyframes testimonialFade {
+
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.testimonials-title {
+  margin: 0;
+
+  color: #403955;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 50px;
+
+  font-weight: 300;
+
+  letter-spacing: 2px;
+
+  line-height: 1.2;
+}
+
+
+/* ========================================
+   DECORATION
+======================================== */
+
+.testimonials-decoration {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  margin: 25px 0;
+}
+
+
+.testimonials-decoration span {
+  width: 45px;
+
+  height: 1px;
+
+  background: #81798c;
+}
+
+
+.testimonials-decoration b {
+  color: #2b253a;
+
+  font-size: 7px;
+
+  line-height: 1;
+}
+
+
+/* ========================================
+   TESTIMONIAL TEXT
+======================================== */
+
+.testimonial-text {
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  color: #150f19;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 23px;
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  line-height: 1.8;
+}
+
+
+/* ========================================
+   NAME
+======================================== */
+
+.testimonial-name {
+  margin: 55px 0 15px;
+
+  color: #403955;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 23px;
+
+  font-weight: 400;
+
+  letter-spacing: 0;
+}
+
+
+/* ========================================
+   COMPANY
+======================================== */
+
+.testimonial-company {
+  margin: 0;
+
+  color: #777777;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 17px;
+
+  font-weight: 400;
+}
+
+
+/* ========================================
+   DOTS
+======================================== */
+
+.testimonial-dots {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 11px;
+
+  margin-top: 75px;
+}
+
+
+.testimonial-dot {
+  width: 15px;
+
+  height: 15px;
+
+  padding: 0;
+
+  border-radius: 50%;
+
+  border: 2px solid #514965;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.testimonial-dot.active {
+  background: #514965;
+
+  transform: scale(1.05);
+}
+
+
+/* ========================================
+   HOVER
+======================================== */
+
+.testimonial-dot:hover {
+  background: #514965;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 968px) {
+
+  .testimonials-section {
+    min-height: 650px;
+
+    padding: 120px 60px 100px;
+  }
+
+  .testimonials-title {
+    font-size: 46px;
+  }
+
+  .testimonial-text {
+    max-width: 850px;
+
+    font-size: 21px;
+
+    line-height: 1.75;
+  }
+
+}
+
+
+/* ========================================
+   SMALL SCREEN
+======================================== */
+
+@media (max-width: 600px) {
+
+  .testimonials-section {
+    min-height: 600px;
+
+    padding: 100px 30px 80px;
+  }
+
+  .testimonials-title {
+    font-size: 34px;
+
+    letter-spacing: 1px;
+  }
+
+  .testimonial-text {
+    font-size: 18px;
+
+    line-height: 1.7;
+  }
+
+  .testimonial-name {
+    margin-top: 40px;
+
+    font-size: 20px;
+  }
+
+  .testimonial-company {
+    font-size: 16px;
+  }
+
+  .testimonial-dots {
+    margin-top: 55px;
+  }
+
+}
