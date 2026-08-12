@@ -1,70 +1,75 @@
-````markdown
 # Fleur — React Front-End Recreation
 
 A React.js recreation of the **Fleur** website home page, built as a front-end development internship assignment.
+
+## Live Demo
+
+🌐 **Hosted Website:** https://fleur-kefp.onrender.com
 
 ## Project Overview
 
 This project recreates the Fleur website's desktop home page with a focus on:
 
-- Accurate layout and spacing
-- Navigation and dropdown/mega-menu interactions
-- Responsive menu behavior for smaller screens
-- Shopping cart and search interactions
-- Scroll-based navbar styling
-- Logo color transition on scroll
-- Menu open/close animations
-- Visual styling matching the reference design
+* Accurate layout and spacing
+* Navigation and dropdown/mega-menu interactions
+* Responsive menu behavior for smaller screens
+* Shopping cart and search interactions
+* Scroll-based navbar styling
+* Logo color transition on scroll
+* Menu open/close animations
+* Visual styling matching the reference design
 
 The main goal is to reproduce the provided reference website as accurately as possible using React.js, CSS, and reusable components.
 
 ## Tech Stack
 
-- **React.js**
-- **JavaScript (ES6+)**
-- **CSS3**
-- **React Icons**
-- **Vite**
-- **npm**
+* **React.js**
+* **JavaScript (ES6+)**
+* **CSS3**
+* **React Icons**
+* **Vite**
+* **npm**
 
 ## Main Features
 
 ### Desktop Navbar
 
-- Fleur logo
-- HOME
-- PAGES
-- PORTFOLIO
-- BLOG
-- SHOP
-- ELEMENTS
-- Shopping cart icon
-- Search icon
-- Menu icon
-- Centered desktop navigation
-- Hover-based dropdown and mega menus
+* Fleur logo
+* HOME
+* PAGES
+* PORTFOLIO
+* BLOG
+* SHOP
+* ELEMENTS
+* Shopping cart icon
+* Search icon
+* Menu icon
+* Centered desktop navigation
+* Hover-based dropdown and mega menus
 
 ### Scroll Effect
 
 The navbar changes appearance when the page is scrolled:
 
-- At the top of the page:
-  - Transparent navbar
-  - White navigation text
-  - White logo
-- After scrolling:
-  - White navbar background
-  - Dark navigation text
-  - Brown/dark Fleur logo
+* At the top of the page:
+
+  * Transparent navbar
+  * White navigation text
+  * White logo
+* After scrolling:
+
+  * White navbar background
+  * Dark navigation text
+  * Brown/dark Fleur logo
 
 ### Menu
 
 The menu button can open and close the existing menu panel.
 
-- Menu icon changes to an X when opened
-- X has a rotation hover animation
-- Menu content can contain expandable submenu sections
-- Smaller screen sizes use the existing mobile menu implementation
+* Menu icon changes to an X when opened
+* X has a rotation hover animation
+* Menu content can contain expandable submenu sections
+* Smaller screen sizes use the existing mobile menu implementation
 
 ### Search
 
@@ -82,84 +87,35 @@ project-fleur/
 ├── public/
 │   ├── images/
 │   │   ├── hero/
-│   │   │   ├── hero-1.jpg
-│   │   │   ├── hero-2.jpg
-│   │   │   └── hero-3.jpg
-│   │   │
 │   │   ├── sharing/
-│   │   │   ├── sharing-bg.jpg
-│   │   │   ├── sharing-1.jpg
-│   │   │   ├── sharing-2.jpg
-│   │   │   ├── sharing-3.jpg
-│   │   │   ├── sharing-4.jpg
-│   │   │   ├── sharing-5.jpg
-│   │   │   └── sharing-6.jpg
-│   │   │
 │   │   ├── testimonials/
-│   │   │   └── testimonials-bg.jpg
-│   │   │
 │   │   ├── work/
-│   │   │   ├── work-1.jpg
-│   │   │   ├── work-2.jpg
-│   │   │   ├── work-3.jpg
-│   │   │   ├── work-4.jpg
-│   │   │   ├── work-5.jpg
-│   │   │   ├── work-6.jpg
-│   │   │   ├── work-7.jpg
-│   │   │   └── work-8.jpg
-│   │   │
 │   │   ├── team/
-│   │   │   ├── team-bg.jpg
-│   │   │   ├── team-1.jpg
-│   │   │   ├── team-2.jpg
-│   │   │   └── team-3.jpg
-│   │   │
 │   │   ├── products/
-│   │   │   ├── product-autumn.jpg
-│   │   │   ├── product-armchair.jpg
-│   │   │   ├── product-forest.jpg
-│   │   │   └── product-dress.jpg
-│   │   │
 │   │   ├── tweets/
-│   │   │   └── tweets-bg.jpg
-│   │   │
 │   │   ├── clients/
-│   │   │   ├── client-1.png
-│   │   │   ├── client-2.png
-│   │   │   ├── client-3.png
-│   │   │   ├── client-4.png
-│   │   │   └── client-5.png
-│   │   │
 │   │   └── solutions/
-│   │       ├── solutions-bg.jpg
-│   │       ├── device-1.png
-│   │       ├── device-2.png
-│   │       └── device-3.png
 │   │
 │   └── favicon.ico
 │
 ├── src/
-│   │
 │   ├── assets/
 │   │   └── logo/
 │   │       ├── logo-light.png
 │   │       └── logo-dark.png
 │   │
 │   ├── components/
-│   │   │
 │   │   ├── Navbar/
 │   │   │   ├── Navbar.jsx
 │   │   │   ├── Navbar.css
 │   │   │   ├── MegaMenu.jsx
 │   │   │   ├── DropdownMenu.jsx
-│   │   │   │
 │   │   │   ├── HomeMenu.jsx
 │   │   │   ├── PagesMenu.jsx
 │   │   │   ├── PortfolioMenu.jsx
 │   │   │   ├── BlogMenu.jsx
 │   │   │   ├── ShopMenu.jsx
 │   │   │   ├── ElementsMenu.jsx
-│   │   │   │
 │   │   │   └── MobileMenu.jsx
 │   │   │
 │   │   └── Footer/
@@ -167,54 +123,18 @@ project-fleur/
 │   │       └── Footer.css
 │   │
 │   ├── sections/
-│   │   │
 │   │   ├── Hero/
-│   │   │   ├── Hero.jsx
-│   │   │   └── Hero.css
-│   │   │
 │   │   ├── Features/
-│   │   │   ├── Features.jsx
-│   │   │   └── Features.css
-│   │   │
 │   │   ├── Sharing/
-│   │   │   ├── Sharing.jsx
-│   │   │   └── Sharing.css
-│   │   │
 │   │   ├── Testimonials/
-│   │   │   ├── Testimonials.jsx
-│   │   │   └── Testimonials.css
-│   │   │
 │   │   ├── About/
-│   │   │   ├── About.jsx
-│   │   │   └── About.css
-│   │   │
 │   │   ├── Portfolio/
-│   │   │   ├── Portfolio.jsx
-│   │   │   └── Portfolio.css
-│   │   │
 │   │   ├── Counters/
-│   │   │   ├── Counters.jsx
-│   │   │   └── Counters.css
-│   │   │
 │   │   ├── Team/
-│   │   │   ├── Team.jsx
-│   │   │   └── Team.css
-│   │   │
 │   │   ├── Products/
-│   │   │   ├── Products.jsx
-│   │   │   └── Products.css
-│   │   │
 │   │   ├── Tweets/
-│   │   │   ├── Tweets.jsx
-│   │   │   └── Tweets.css
-│   │   │
 │   │   ├── Clients/
-│   │   │   ├── Clients.jsx
-│   │   │   └── Clients.css
-│   │   │
 │   │   └── Solutions/
-│   │       ├── Solutions.jsx
-│   │       └── Solutions.css
 │   │
 │   ├── pages/
 │   │   └── Home/
@@ -231,7 +151,7 @@ project-fleur/
 ├── vite.config.js
 ├── eslint.config.js
 └── README.md
-````
+```
 
 > The exact project structure may vary depending on the final implementation.
 
@@ -312,6 +232,3 @@ If required, the project can be extended with:
 **Anurag Sharma**
 
 Built as a front-end web development internship assignment.
-
-```
-```
