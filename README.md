@@ -77,24 +77,160 @@ The shopping cart icon opens a cart popup displaying the current cart state.
 ## Project Structure
 
 ```text
-src/
-├── assets/
-│   └── logo/
-│       └── logo-light.png
+project-fleur/
 │
-├── components/
-│   └── Navbar/
-│       ├── Navbar.jsx
-│       ├── Navbar.css
-│       ├── HomeMenu.jsx
-│       ├── PagesMenu.jsx
-│       ├── PortfolioMenu.jsx
-│       ├── BlogMenu.jsx
-│       ├── ShopMenu.jsx
-│       ├── ElementsMenu.jsx
-│       └── MobileMenu.jsx
+├── public/
+│   ├── images/
+│   │   ├── hero/
+│   │   │   ├── hero-1.jpg
+│   │   │   ├── hero-2.jpg
+│   │   │   └── hero-3.jpg
+│   │   │
+│   │   ├── sharing/
+│   │   │   ├── sharing-bg.jpg
+│   │   │   ├── sharing-1.jpg
+│   │   │   ├── sharing-2.jpg
+│   │   │   ├── sharing-3.jpg
+│   │   │   ├── sharing-4.jpg
+│   │   │   ├── sharing-5.jpg
+│   │   │   └── sharing-6.jpg
+│   │   │
+│   │   ├── testimonials/
+│   │   │   └── testimonials-bg.jpg
+│   │   │
+│   │   ├── work/
+│   │   │   ├── work-1.jpg
+│   │   │   ├── work-2.jpg
+│   │   │   ├── work-3.jpg
+│   │   │   ├── work-4.jpg
+│   │   │   ├── work-5.jpg
+│   │   │   ├── work-6.jpg
+│   │   │   ├── work-7.jpg
+│   │   │   └── work-8.jpg
+│   │   │
+│   │   ├── team/
+│   │   │   ├── team-bg.jpg
+│   │   │   ├── team-1.jpg
+│   │   │   ├── team-2.jpg
+│   │   │   └── team-3.jpg
+│   │   │
+│   │   ├── products/
+│   │   │   ├── product-autumn.jpg
+│   │   │   ├── product-armchair.jpg
+│   │   │   ├── product-forest.jpg
+│   │   │   └── product-dress.jpg
+│   │   │
+│   │   ├── tweets/
+│   │   │   └── tweets-bg.jpg
+│   │   │
+│   │   ├── clients/
+│   │   │   ├── client-1.png
+│   │   │   ├── client-2.png
+│   │   │   ├── client-3.png
+│   │   │   ├── client-4.png
+│   │   │   └── client-5.png
+│   │   │
+│   │   └── solutions/
+│   │       ├── solutions-bg.jpg
+│   │       ├── device-1.png
+│   │       ├── device-2.png
+│   │       └── device-3.png
+│   │
+│   └── favicon.ico
 │
-└── ...
+├── src/
+│   │
+│   ├── assets/
+│   │   └── logo/
+│   │       ├── logo-light.png
+│   │       └── logo-dark.png
+│   │
+│   ├── components/
+│   │   │
+│   │   ├── Navbar/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Navbar.css
+│   │   │   ├── MegaMenu.jsx
+│   │   │   ├── DropdownMenu.jsx
+│   │   │   │
+│   │   │   ├── HomeMenu.jsx
+│   │   │   ├── PagesMenu.jsx
+│   │   │   ├── PortfolioMenu.jsx
+│   │   │   ├── BlogMenu.jsx
+│   │   │   ├── ShopMenu.jsx
+│   │   │   ├── ElementsMenu.jsx
+│   │   │   │
+│   │   │   └── MobileMenu.jsx
+│   │   │
+│   │   └── Footer/
+│   │       ├── Footer.jsx
+│   │       └── Footer.css
+│   │
+│   ├── sections/
+│   │   │
+│   │   ├── Hero/
+│   │   │   ├── Hero.jsx
+│   │   │   └── Hero.css
+│   │   │
+│   │   ├── Features/
+│   │   │   ├── Features.jsx
+│   │   │   └── Features.css
+│   │   │
+│   │   ├── Sharing/
+│   │   │   ├── Sharing.jsx
+│   │   │   └── Sharing.css
+│   │   │
+│   │   ├── Testimonials/
+│   │   │   ├── Testimonials.jsx
+│   │   │   └── Testimonials.css
+│   │   │
+│   │   ├── About/
+│   │   │   ├── About.jsx
+│   │   │   └── About.css
+│   │   │
+│   │   ├── Portfolio/
+│   │   │   ├── Portfolio.jsx
+│   │   │   └── Portfolio.css
+│   │   │
+│   │   ├── Counters/
+│   │   │   ├── Counters.jsx
+│   │   │   └── Counters.css
+│   │   │
+│   │   ├── Team/
+│   │   │   ├── Team.jsx
+│   │   │   └── Team.css
+│   │   │
+│   │   ├── Products/
+│   │   │   ├── Products.jsx
+│   │   │   └── Products.css
+│   │   │
+│   │   ├── Tweets/
+│   │   │   ├── Tweets.jsx
+│   │   │   └── Tweets.css
+│   │   │
+│   │   ├── Clients/
+│   │   │   ├── Clients.jsx
+│   │   │   └── Clients.css
+│   │   │
+│   │   └── Solutions/
+│   │       ├── Solutions.jsx
+│   │       └── Solutions.css
+│   │
+│   ├── pages/
+│   │   └── Home/
+│   │       ├── Home.jsx
+│   │       └── Home.css
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── eslint.config.js
+└── README.md
 ````
 
 > The exact project structure may vary depending on the final implementation.
